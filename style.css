@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+#page1{
+    padding-top: 30vh;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#part1{
+    height: 70vh;
+    width: 100%;
+    line-height: 28vh;
+}
+
+#part1 h1{
+    text-transform: uppercase;
+    font-family: 'futura';
+    font-size: 16.5vw;
+    text-align: center;
+    letter-spacing: -1vw;
+}
+
+#part2 {
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 7% ;
+}
+
+#part2 > img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+#scrolll{
+    position: absolute;
+    top: 35%;
+    left: 61.5%;
+    transform: translate(-50%,-50%);
+    height: 25vh;
+    width: 25vh;
+}
+
+#buy{
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }    
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#buy h6{
+    position: absolute;
+    z-index: 99;
+    font-size: 1.5vw;
+    font-family: 'futura';
+
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-play-state: running;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+
+#insi{
+    padding: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    width: 100%;
+    font-family: "gilroy";
+    font-weight: 600;
+}
+
+#line{
+    width: 100%;
+    border: 1px solid black;
+
+}
+
+#page2{
+    padding: 2vw;
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+
+.elem{
+    position: relative;
+    height: 100%;
+    width: 32%;
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box{
+    position: absolute;
+    top: 55%;
+    left: 18%;
+    z-index: 99;
+    transform: translate(-50%,-50%);
+    height: 7vh;
+    width: 20vw;
+    border-top-right-radius: 2vw ;
+    border-top-left-radius: 2vw ;
+    border-bottom-right-radius: 2vw ;
+    border-bottom-left-radius: 2vw ;
+    background-color: rgb(140, 200, 152);
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: whitesmoke;
+}
